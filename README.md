@@ -4,6 +4,11 @@
 
 A full-stack image search app / school project
 
+## Updates
+
+**March 24**
+- Uploaded the whole project to a new repo since old project had a lot of issues
+
 ## Description
 
 Login with your Google/Github account and search for your favorite images. Add the ones you like to your favorites so you don't lose them.
