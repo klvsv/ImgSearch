@@ -22,5 +22,6 @@ Login with your Google/Github account and search for your favorite images. Add t
 2. Clone this repository
 3. In your terminal of choice:
 - Enter `cd client` and `npm run dev`
+- Open a new terminal
 - Enter `cd server` and  `node server.js`.
 4. Open up [http://localhost:5173/](http://localhost:5173/) in your browser.
