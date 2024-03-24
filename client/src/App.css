@@ -1,0 +1,35 @@
+.main {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: "Arial", sans-serif;
+}
+.main button {
+	padding: 0.5rem 0.8rem;
+	border-radius: 0.5rem;
+	background-color: rgb(49, 49, 49);
+	color: whitesmoke;
+	cursor: pointer;
+	transition: background-color 0.1s ease-in-out, color 0.2s ease-in-out;
+}
+
+.main button:hover {
+	background-color: whitesmoke;
+	color: black;
+}
+
+.heading {
+	margin-top: 22rem;
+	text-align: center;
+}
+
+.heading h1 {
+	color: #007bff;
+	margin-bottom: 1.3rem;
+}
+
+.imgsearch-title {
+	font-size: 3rem;
+}

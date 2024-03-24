@@ -1,0 +1,89 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.2rem;
+	font-family: "Arial", sans-serif;
+	background-color: rgb(24, 24, 24);
+	color: white;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.nav-links,
+.user-info {
+	display: flex;
+	align-items: center;
+	margin-left: 2rem;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	margin-right: 2.2rem;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+.userName {
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	margin-right: 1rem;
+}
+
+.profile-picture {
+	margin-right: 1rem;
+	border-radius: 10rem;
+	width: 3rem;
+}
+
+nav button {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-right: 2rem;
+	padding: 0.3rem 0.8rem;
+	border-color: transparent;
+	border-radius: 0.5rem;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	transition: background-color 0.1s ease-in-out, color 0.2s ease-in-out;
+}
+
+nav button:hover {
+	background-color: rgb(211, 211, 211);
+	color: black;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.1rem;
+		font-family: "Arial", sans-serif;
+		font-size: 0.8rem;
+		background-color: rgb(24, 24, 24);
+		color: white;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1000;
+	}
+
+	nav a {
+		margin-right: 1rem;
+	}
+
+	nav button {
+		width: 100%;
+		margin-right: 1rem;
+	}
+}

@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "userId": "google-oauth2|104078398048751389095",
+      "favorites": [
+        {
+          "link": "https://images.newscientist.com/wp-content/uploads/2023/11/24121101/main-image-ns019monument-valley-istock-472167155--scaled.jpg?width=1200",
+          "title": "Favorite Image"
+        },
+        {
+          "link": "https://www.usnews.com/object/image/00000177-d0a6-d218-a3ff-ffbf5ce30000/bs21-utah-profile.jpg?update-time=1614113358655&size=superhero-medium",
+          "title": "Favorite Image"
+        },
+        {
+          "link": "https://m.media-amazon.com/images/I/91Qa6FY7CjL._AC_UF894,1000_QL80_.jpg",
+          "title": "Favorite Image"
+        },
+        {
+          "link": "https://cdn.britannica.com/79/6079-050-977F6960/Australia.jpg",
+          "title": "Favorite Image"
+        },
+        {
+          "link": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg",
+          "title": "Favorite Image"
+        },
+        {
+          "link": "https://cdn.jetphotos.com/full/5/99428_1579674487.jpg",
+          "title": "Favorite Image"
+        }
+      ]
+    },
+    {
+      "userId": "github|104798357",
+      "favorites": []
+    }
+  ]
+}
