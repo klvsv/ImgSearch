@@ -6,6 +6,11 @@ A full-stack image search app / school project
 
 ## Updates
 
+**April 19th**
+- Updated components and Google Custom Search hook to handle both suggested search words + search response time
+- Also: some added styling accordingly 
+
+
 **March 24**
 - Uploaded the whole project to a new repo since old project had a lot of issues
 
@@ -13,7 +18,6 @@ A full-stack image search app / school project
 
 Login with your Google/Github account and search for your favorite images. Add the ones you like to your favorites so you don't lose them.
 
-**Coming feature**: "Download"-button to instantly download chosen image to your drive/device.
 
 ## Getting Started
 
