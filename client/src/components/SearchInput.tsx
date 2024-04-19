@@ -6,17 +6,31 @@ import "../styles/SearchInput.css";
 
 const SearchInput = ({ onSearch }: { onSearch: (query: string) => void }) => {
 	const [searchQuery, setSearchQuery] = useState("");
+	const [searchResults, setSearchResults] = useState({
+		items: [],
+		searchInformation: {
+			formattedSearchTime: "",
+		},
+	});
 	const [suggestedSearch, setSuggestedSearch] = useState<string>("");
 
 	useEffect(() => {
 		if (searchQuery) {
 			searchImages(searchQuery)
-				.then(({ suggestedSearch }) => {
-					setSuggestedSearch(suggestedSearch);
+				.then(({ images, suggestedSearch, searchTime }) => {
+					setSearchResults({ items: images, searchInformation: { formattedSearchTime: searchTime } });
+					setSuggestedSearch(suggestedSearch || searchQuery);
 				})
 				.catch((error) => {
 					console.error("Error fetching suggestions:", error);
 				});
+		} else {
+			setSearchResults({
+				items: [],
+				searchInformation: {
+					formattedSearchTime: "",
+				},
+			});
 		}
 	}, [searchQuery]);
 
@@ -33,7 +47,7 @@ const SearchInput = ({ onSearch }: { onSearch: (query: string) => void }) => {
 		<div className="search-input-container">
 			<input
 				type="text"
-				placeholder="Search for images.."
+				placeholder="Find your next favorite image.."
 				value={searchQuery}
 				onChange={(e) => setSearchQuery(e.target.value)}
 			/>

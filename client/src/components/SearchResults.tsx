@@ -6,6 +6,7 @@ import "../styles/SearchResults.css";
 const SearchResults: React.FC<SearchResultsProps> = ({ searchResults }) => {
 	return (
 		<div className="search-results">
+			{searchResults.searchInformation.formattedSearchTime && <p className="search-time">Your search took {searchResults.searchInformation.formattedSearchTime} seconds</p>}
 			{searchResults.items.map((item, index) => (
 				<div
 					key={index}
