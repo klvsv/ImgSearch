@@ -1,4 +1,5 @@
 <img alt="ImgSearch" src="https://raw.githubusercontent.com/klvsv/ImgSearch/main/client/public/imgsearch.png">
+<img alt="ImgSearch" width="764px" src="https://raw.githubusercontent.com/klvsv/ImgSearch/main/client/public/logged-in.png">
 
 # ImgSearch
 
