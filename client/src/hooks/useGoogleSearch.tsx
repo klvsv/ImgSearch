@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 
 export const useGoogleSearch = () => {
 	const [searchResults, setSearchResults] = useState({
@@ -15,8 +16,8 @@ export const useGoogleSearch = () => {
 		setSearchError(null);
 
 		try {
-			const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${import.meta.env.VITE_GOOGLE_API_KEY}&cx=${import.meta.env.VITE_GOOGLE_SEARCH_ID}&num=10&searchType=image&q=${searchQuery}`);
-			const data = await response.json();
+			const response = await axios.get(`https://www.googleapis.com/customsearch/v1?key=${import.meta.env.VITE_GOOGLE_API_KEY}&cx=${import.meta.env.VITE_GOOGLE_SEARCH_ID}&num=10&searchType=image&q=${searchQuery}`);
+			const data = await response.data;
 
 			const formattedSearchTime = data.searchInformation ? data.searchInformation.formattedSearchTime : "";
 			setSearchResults({
